@@ -11,9 +11,6 @@
         "Good day"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
     },
@@ -21,64 +18,1349 @@
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "See you later, thanks for visiting"
+        
       ]
     },
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "responses": ["Happy to help!"]
     },
     {
-      "tag": "items",
+      "tag": "course_info",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Which degree courses do you offer?",
+        "What programs are available at Kibabii University?",
+        "List undergraduate courses offered",
+        "What postgraduate courses do you have?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "We offer undergraduate, master's, and doctoral programs across various faculties including Science, Education, Business, and Computing.",
+        "Kibabii University offers diverse courses such as BSc Computer Science, BA in Education, MBA, and PhDs in various fields. Visit https://kibu.ac.ke/academics/ for full details."
       ]
     },
     {
-      "tag": "payments",
+      "tag": "student_portal_access",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "How do I access the student portal?",
+        "Where is the student login page?",
+        "Login to student portal",
+        "Access my student profile"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "You can access the Student Portal at https://student.kibu.ac.ke/. Use your registration number and password to log in.",
+        "Visit https://student.kibu.ac.ke/ to log in to the student portal and manage your academic records."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "elearning",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Where can I access E-Learning?",
+        "How do I log in to Moodle?",
+        "Access the E-Learning system",
+        "E-learning login page"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Our E-Learning Portal is available at https://elearning.kibu.ac.ke/. Use your assigned credentials to log in.",
+        "You can access course content and participate in classes through https://elearning.kibu.ac.ke/"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "library_access",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "How do I access the library system?",
+        "Where is the online library?",
+        "Login to Kibabii University Library",
+        "Access e-library resources"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "You can access our digital library at https://library.kibu.ac.ke/. Use your university login to browse resources.",
+        "Visit https://library.kibu.ac.ke/ to access e-books, journals, and other academic resources."
       ]
-    }
+    },
+    {
+      "tag": "admission_info",
+      "patterns": [
+        "How do I apply for admission?",
+        "Admission process at Kibabii University",
+        "What are the admission requirements?",
+        "Apply for a course"
+      ],
+      "responses": [
+        "You can apply for admission online via https://application.kibu.ac.ke/. Follow the responses provided for each program.",
+        "Visit https://application.kibu.ac.ke/ to begin your application and view entry requirements."
+      ]
+    },
+    {
+      "tag": "contacts",
+      "patterns": [
+        "How do I contact Kibabii University?",
+        "Kibabii University email and phone number",
+        "Where is Kibabii University located?",
+        "Contact information"
+      ],
+      "responses": [
+        "You can reach us via email at info@kibu.ac.ke or call +254 704 243 888. We are located in Bungoma County, Kenya.",
+        "For inquiries, contact us at info@kibu.ac.ke or call +254 704 243 888. Our main campus is in Bungoma."
+      ]
+    },
+    {
+      "tag": "download_past_papers",
+      "patterns": [
+        "How do I download past papers?",
+        "Where can I get previous exam papers?",
+        "Access past question papers",
+        "Download Kibabii University past papers"
+      ],
+      "responses": [
+        "You can download past papers from the library portal at https://library.kibu.ac.ke/ under the 'Past Papers' section. or",
+        "Visit https://library.kibu.ac.ke/ and navigate to 'Past Papers' to access previous exam papers."
+      ]
+    },
+    {
+      "tag": "fee_statement",
+      "patterns": [
+        "How can I download my fee statement?",
+        "Where is the fee statement page?",
+        "Check my payment records",
+        "Download tuition fee statement"
+      ],
+      "responses": [
+        "Log into the Student Portal at https://student.kibu.ac.ke/, then go to 'Finance' to view and download your fee statement.",
+        "You can download your fee statement from the Student Portal under the 'Finance' section."
+      ]
+    },
+    {
+      "tag": "transcript_download",
+      "patterns": [
+        "How do I get my academic transcript?",
+        "Download my transcript",
+        "Where can I request a transcript?",
+        "Transcript request process"
+      ],
+      "responses": [
+        "To request a transcript, log into https://student.kibu.ac.ke/ and navigate to 'Academics' > 'Transcript'. Follow the provided responses.",
+        "You can request your official transcript through the Student Portal under the 'Academics' section."
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "Can you guide me on how I can apply for a course at Kibabii University as a new student?",
+        "What are the minimum academic requirements needed to qualify for an undergraduate program at Kibabii University?",
+        "I've already submitted my application—how can I check the status of my admission online?",
+        "Where exactly on the website can I download my admission letter after being accepted?",
+        "What is the application deadline for the upcoming intake at Kibabii University?",
+        "Does Kibabii University provide an online portal where I can submit my application documents and details?",
+        "How much is the application fee, and what payment methods are accepted for new applicants?",
+        "Could you give me a list of all the courses and programs offered at Kibabii University for undergraduate and postgraduate levels?",
+        "I'm currently studying at another institution—does Kibabii University accept credit transfers or inter-university transfers?",
+        "Are there flexible study options such as weekend or evening classes available for working students?",
+        "What is the KCSE grade cut-off for someone who wants to pursue a degree in education or business at Kibabii University?",
+        "Where can I find the admission requirements and application process for postgraduate programs?",
+        "I am from another country—how can international students apply to Kibabii University?",
+        "What's the process for requesting an admission deferral if I'm not able to report this semester?",
+        "Are there any pre-university or bridging courses available for students who do not meet direct entry requirements?"
+      ],
+      "responses": [
+        "You can apply through our online portal at https://application.kibu.ac.ke/. Follow the provided responses for your preferred program.",
+        "Minimum academic requirements vary by program. For undergraduate courses, a KCSE C+ is generally required, but visit https://kibu.ac.ke/admissions/ for specific details.",
+        "You can check your admission status via the online application portal: https://application.kibu.ac.ke/",
+        "Once accepted, admission letters can be downloaded from your application account at https://application.kibu.ac.ke/",
+        "Application deadlines are posted on our website's announcements page. Visit https://kibu.ac.ke regularly for updates.",
+        "Yes, Kibabii University offers an online application portal at https://application.kibu.ac.ke/ where you can submit your documents.",
+        "The application fee is KES 1,000 for local students. Payments can be made via M-Pesa or bank deposit as per instructions during the application process.",
+        "We offer a wide range of undergraduate and postgraduate courses. Visit https://kibu.ac.ke/academics/ for a complete list.",
+        "Yes, we do accept credit transfers and inter-university transfers. Please contact admissions@kibu.ac.ke for eligibility and process.",
+        "Yes, we offer flexible study options including evening and weekend programs for certain courses.",
+        "For Education and Business degrees, a minimum KCSE mean grade of C+ is required. Specific cluster subject requirements apply.",
+        "Admission requirements and the application process for postgraduate programs are outlined at https://kibu.ac.ke/graduate-studies/",
+        "International students can apply online at https://application.kibu.ac.ke/ and must include certified academic transcripts and passport details.",
+        "To defer your admission, submit a formal deferral request to the Registrar Academics via email or through the admissions portal.",
+        "Yes, bridging and pre-university programs are available for students who do not meet direct entry requirements. Contact admissions for guidance."
+      ]
+    },
+    {
+      "tag": "academics",
+      "patterns": [
+        "Can you show me where to find a complete list of academic programs offered at Kibabii University?",
+        "What faculties are available at Kibabii University, and what programs do they each offer?",
+        "Does the university provide online or distance learning options for students who cannot attend classes physically?",
+        "On average, how many years does it take to complete a Bachelor's degree program at Kibabii University?",
+        "I'm interested in diploma courses—can you tell me which diploma programs are currently available?",
+        "Where on the website can I access or download the syllabus for my course?",
+        "What programs are available in the School of Computing and Informatics, and what are the entry requirements?",
+        "How can a student apply for a change of course after being admitted into a program?",
+        "Does every academic program at Kibabii University include an industrial attachment or internship period?",
+        "Can you give me details about the Doctoral (PhD) programs offered and their application process?",
+        "Who is the current Dean of the School of Education, and how can I contact their office?",
+        "Where can I download or view the latest academic calendar for the university?",
+        "How do I register for units or modules each semester?",
+        "What grading system does Kibabii University use to assess students' academic performance?",
+        "If I studied in another institution, can I apply for credit transfer or exemption at Kibabii University?"
+      ],
+      "responses": [
+        "You can find the full list of programs offered at Kibabii University on the Academics section of our website: https://kibu.ac.ke/academics/",
+        "Kibabii University has faculties including Education & Social Sciences, Science, and Computing & Informatics. Each offers specialized undergraduate and postgraduate programs. Check the Academics page for details.",
+        "Yes, we provide Open, Distance, and eLearning (ODeL) options for select programs. Visit https://kibu.ac.ke/odel/ for more information.",
+        "Most Bachelor's degree programs at Kibabii University take 4 years to complete on a full-time basis.",
+        "We offer a number of diploma programs in areas such as Education, Business, and ICT. Visit our Admissions or Academics page to view the full list.",
+        "You can download course syllabi from your student portal or request them from your department. Some faculties also upload them to the main website.",
+        "The School of Computing and Informatics offers programs such as BSc Computer Science, BSc IT, and diploma courses. Entry typically requires a C+ in KCSE with a C in Maths and English.",
+        "To apply for a change of course, you'll need to submit a formal request to the Registrar Academics along with a justification. Approval is subject to availability and academic performance.",
+        "Yes, most programs include a mandatory industrial attachment in the third or fourth year to give students practical experience.",
+        "Doctoral programs are available in select disciplines. Visit https://kibu.ac.ke/graduate-studies/ for PhD program listings and application requirements.",
+        "To contact the Dean of the School of Education, visit the school's webpage or email education@kibu.ac.ke. The current dean's name is listed there.",
+        "The latest academic calendar is available for download under the 'Downloads' section of the university's official website: https://kibu.ac.ke/downloads/",
+        "You can register for your units through the Student Portal during the registration period each semester. Contact your department if you encounter issues.",
+        "Kibabii University uses a GPA-based grading system out of 4.0. Grades include A (70-100), B, C, D, and F (Fail).",
+        "Yes, you may apply for credit transfer or exemptions. Your previous transcripts will be reviewed by the relevant department for equivalency and approval."
+      ]
+    },
+    {
+      "tag": "departments_schools",
+      "patterns": [
+        
+          "What are the main functions and roles of the School of Graduate Studies at Kibabii University?",
+          "What does the School of Graduate Studies do at KIBU?",
+          "Can you explain the responsibilities of the Graduate School?",
+          "How does the School of Graduate Studies support postgraduate students?"
+        ],
+        "responses": [
+          "Manages all postgraduate admissions and enrollment processes.",
+          "Coordinates thesis and dissertation supervision.",
+          "Monitors academic progress of Master's and PhD students.",
+          "Ensures quality assurance and compliance with postgraduate policies.",
+          "Supports research, innovation, and academic excellence."
+        ]
+    },
+    {
+      "tag": "departments_schools",
+      "patterns": [
+          "Who is currently heading the School of Business and Economics, and what programs are offered there?",
+          "Who is the Dean of the School of Business and Economics?",
+          "What courses does the School of Business and Economics offer?",
+          "Which programs are available in the Business School?"
+        ],
+        "responses": [
+          "Visit https://kibu.ac.ke and navigate to the 'Schools' section.",
+          "Click on the School of Business and Economics.",
+          "Check the leadership page for the current dean or school head.",
+          "Review the list of programs like BBA, MBA, and Economics.",
+          "Confirm entry requirements and intake dates from the same page."
+        ]
+    },
+    {
+      "tag": "department_contact",
+      "patterns": [
+          "How can I reach out to or get contact information for the Faculty of Science?",
+          "Where can I get in touch with the Science department?",
+          "How do I contact the Faculty of Science at Kibabii?",
+          "What’s the email for the Science Faculty office?"
+        ],
+        "responses": [
+          "Go to https://kibu.ac.ke.",
+          "Navigate to Academics > Faculties > Faculty of Science.",
+          "Locate the contact information at the bottom of the page.",
+          "Use the official email or phone number provided.",
+          "You may also fill out the contact form or visit the department office."
+        ]
+    },
+    {
+      "tag": "department_info",
+      "patterns": [
+          "Can you list all the departments under the School of Education and the courses they offer?",
+          "What departments are under the School of Education at KIBU?",
+          "Which courses are taught in the School of Education?",
+          "What programs do the Education departments offer?"
+        ],
+        "responses": [
+          "Visit the Kibabii University website.",
+          "Go to the School of Education under the Academics section.",
+          "Identify departments like Curriculum & Instruction, Educational Foundations, and Psychology & Technology.",
+          "Review each department’s undergraduate and postgraduate programs.",
+          "Check specific entry requirements and course structures on each page."
+        ]
+    },
+    {
+      "tag": "department_programs",
+      "patterns": [
+          "What undergraduate and postgraduate programs are available in the Department of Information Technology?",
+          "Which IT courses can I study at Kibabii University?",
+          "Does KIBU offer MSc in Information Technology?",
+          "What diploma and degree programs does the IT department offer?"
+        ],
+        "responses": [
+          "Go to https://kibu.ac.ke and click on 'School of Computing'.",
+          "Choose the Department of Information Technology.",
+          "Browse through the listed programs: BSc IT, Diploma IT, MSc IT, and short courses.",
+          "Click each program to view course content and duration.",
+          "Check eligibility criteria and application instructions."
+        ]
+    },
+    {
+      "tag": "health_department",
+      "patterns": [
+          "Does Kibabii University have a School of Nursing or Health Sciences, and what programs are offered there?",
+          "Are there health science programs at Kibabii University?",
+          "Can I study Nursing at KIBU?",
+          "Is there a Faculty of Health Sciences at Kibabii?"
+        ],
+        "responses": [
+          "Currently, Kibabii University does not offer a dedicated School of Nursing.",
+          "Visit the university website for any new announcements or updates.",
+          "Look under the 'Academics' section for planned or pilot programs in health sciences.",
+          "Contact the Academic Registrar for future offerings.",
+          "Consider related programs in science or biology if interested in health fields."
+        ]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+          "Can you give me a full list of all academic departments available at Kibabii University?",
+          "How many departments are there at KIBU?",
+          "Where can I find a directory of departments?",
+          "Does the university publish a list of academic divisions?"
+        ],
+        "responses": [
+          "Go to https://kibu.ac.ke and click on 'Academics'.",
+          "Select the 'Faculties & Schools' tab.",
+          "Each school lists its respective departments.",
+          "Review department names under Education, Computing, Business, and Science.",
+          "Click on each department to learn more about courses offered."
+        ]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+          "I'd like to enroll in the School of Computing—what are the responses to join and what do I need?",
+          "How do I apply to the School of Computing at Kibabii?",
+          "What qualifications are needed to join the Computing School?",
+          "Can I apply online for IT or Computer Science at KIBU?"
+        ],
+        "responses": [
+          "Ensure you meet the minimum KCSE grade of C+ with relevant subject passes.",
+          "Visit the Admissions section on the Kibabii website.",
+          "Apply through KUCCPS or directly via the university portal.",
+          "Upload necessary documents including transcripts and ID.",
+          "Wait for an admission letter or follow up with the Admissions Office."
+        ]
+    },
+    {
+      "tag": "school_of_graduates",
+      "patterns": [
+          "Where is the School of Graduate Studies physically located within the university?",
+          "Can I visit the Graduate School in person?",
+          "Where do I find the School of Graduate Studies office?",
+          "What’s the location of the postgraduate office at KIBU?"
+        ],
+        "responses": [
+          "The School of Graduate Studies is located on the main Kibabii campus.",
+          "It is typically housed near the Administration or Library block.",
+          "Follow campus signposts labeled 'Graduate Studies'.",
+          "Ask at the front gate or administration desk for directions.",
+          "Ensure you visit during working hours for assistance."
+        ]
+    },
+    {
+      "tag": "dean_of_students",
+      "patterns": [
+          "Who is the current Dean of Students, and what services does the Dean's office provide?",
+          "What does the Dean of Students office do at Kibabii?",
+          "Who do I contact for student support and welfare issues?",
+          "Can I get counseling or housing help from the Dean's office?"
+        ],
+        "responses": [
+          "Visit the 'Dean of Students' page on the university website.",
+          "Check for the name and contact of the current Dean.",
+          "The office handles student welfare, counseling, housing, discipline, and clubs.",
+          "Reach out via email at dean.students@kibu.ac.ke for support.",
+          "You can also visit their office on the main campus for direct services."
+        ]
+    },
+    {
+      "tag": "timetables_exams_calendar",
+      "patterns": [
+          "Where exactly can I access my class timetable for the current semester?",
+          "How do I find my timetable for this semester?",
+          "Where on the portal is the class schedule shown?",
+          "Can I download the current semester's timetable online?"
+        ],
+        "responses": [
+          "Log into the Kibabii University Student Portal.",
+          "Navigate to the 'Timetable' or 'Academics' section.",
+          "Select your department or course code.",
+          "Choose the current semester from the dropdown.",
+          "Download or print the timetable if needed."
+        ]
+    },
+    {
+      "tag": "exam_dates",
+      "patterns": [
+          "When are the university examinations scheduled, and how can I confirm my exam dates?",
+          "Where do I find my university exam timetable?",
+          "How do I know the dates of my upcoming exams?",
+          "Is the examination schedule posted online?"
+        ],
+        "responses": [
+          "Log in to the Student Portal at https://student.kibu.ac.ke.",
+          "Go to the 'Examinations' or 'Exam Timetable' section.",
+          "Select your course or department.",
+          "Review the listed dates and venues for your papers.",
+          "Download the schedule or check notice boards for changes."
+        ]
+    },
+    {
+      "tag": "academic_calender",
+      "patterns": [
+          "Could you show me where to view or download the official academic calendar?",
+          "Where is the academic calendar published?",
+          "How can I get the Kibabii University semester dates?",
+          "Is there a page with the full academic year schedule?"
+        ],
+        "responses": [
+          "Visit the official Kibabii University website at https://kibu.ac.ke.",
+          "Navigate to the 'Academics' or 'Downloads' section.",
+          "Look for 'Academic Calendar' under available documents.",
+          "Click to view or download the PDF version.",
+          "Refer to the calendar for key semester dates and deadlines."
+        ]
+    },
+    {
+      "tag": "fee_deadline",
+      "patterns": [
+          "What is the deadline for paying fees before being allowed to sit for exams?",
+          "When must I complete fee payment to sit exams?",
+          "Is there a fee deadline related to exam eligibility?",
+          "How late can I pay school fees without missing exams?"
+        ],
+        "responses": [
+          "Check the official academic calendar on the university website.",
+          "Look for the fee payment deadline usually listed before mid-semester.",
+          "Confirm the deadline with the Finance Office if unsure.",
+          "Ensure your payment is reflected in the Student Portal.",
+          "Save your payment confirmation for exam registration."
+        ]
+    },
+    {
+      "tag": "opening_dates",
+      "patterns": [
+          "On what date do lectures for the new semester officially begin?",
+          "When is the opening date for the upcoming semester?",
+          "What’s the first day of class for this semester?",
+          "Where can I check the semester opening date?"
+        ],
+        "responses": [
+          "Visit https://kibu.ac.ke and check the latest announcements.",
+          "Open the most recent academic calendar.",
+          "Look for the semester start date under ‘Lecture Commencement’.",
+          "Confirm with your department or faculty if unclear.",
+          "Prepare accordingly for the first day of lectures."
+        ]
+    },
+    {
+      "tag": "exam_registration",
+      "patterns": [
+          "How can I register for exams, and what documents do I need for the process?",
+          "Where is the exam registration section on the student portal?",
+          "What’s the procedure for exam registration at Kibabii University?",
+          "Do I need to submit documents to register for university exams?"
+        ],
+        "responses": [
+          "Log in to the Student Portal.",
+          "Navigate to the 'Exam Registration' tab.",
+          "Ensure you’ve registered your courses for the semester.",
+          "Upload or present your fee payment receipt if required.",
+          "Submit the registration and confirm the acknowledgment."
+        ]
+    },
+    {
+      "tag": "graduation",
+      "patterns": [
+          "When is the next graduation ceremony scheduled to take place?",
+          "What’s the date for the upcoming Kibabii University graduation?",
+          "How do I confirm the graduation ceremony date?",
+          "Is the graduation date announced on the website?"
+        ],
+        "responses": [
+          "Go to the Kibabii University website homepage.",
+          "Look for the latest news or banner about graduation.",
+          "Check the Events or Notices section for details.",
+          "Follow updates from the university’s official social media.",
+          "Contact the Academic Registrar’s office for confirmation."
+        ]
+    },
+    {
+      "tag": "exam_timetable",
+      "patterns": [
+          "Is the exam timetable available online, and where can I find it?",
+          "Can I check the exam schedule on the portal?",
+          "Where is the university exam timetable published?",
+          "Is the department exam timetable uploaded online?"
+        ],
+        "responses": [
+          "Log in to the Student Portal.",
+          "Click on the 'Examinations' or 'Exam Schedule' tab.",
+          "Choose the semester or academic year.",
+          "Download or view the timetable.",
+          "Cross-check with your department for updates or changes."
+        ]
+    },
+    {
+      "tag": "sup_application",
+      "patterns": [
+          "How do I apply for supplementary or special exams if I missed the main exam?",
+          "What’s the procedure for applying for special exams?",
+          "Can I request a supplementary exam online?",
+          "What responses should I take if I missed an exam due to illness?"
+        ],
+        "responses": [
+          "Visit or contact the Exams Office for the application form.",
+          "Explain your reason and attach any supporting documents (e.g., medical letter).",
+          "Fill out the form and get departmental approval.",
+          "Submit the form within the deadline given by the university.",
+          "Check the portal or noticeboard for the special exam schedule."
+        ]
+    },
+    {
+      "tag": "sem_schedule",
+      "patterns": [
+          "Can I view the semester's teaching and exam schedule on the university portal?",
+          "Where do I find both lecture and exam timetables online?",
+          "Is the full academic schedule posted on the student portal?",
+          "Can I get a combined calendar for lectures and exams?"
+        ],
+        "responses": [
+          "Log in to the Kibabii University Student Portal.",
+          "Navigate to both 'Timetable' and 'Examinations' sections.",
+          "Select your semester and course.",
+          "Download or print the lecture and exam schedule.",
+          "Refer to the academic calendar for any overlapping dates."
+        ]
+    
+    },
+    
+    {
+      "tag": "student_portal_services",
+      "patterns": [
+          "How do I log into the Kibabii University student portal, and what services can I access there?",
+          "Where can I access the student portal, and what features does it have?",
+          "What is the URL and login method for the student portal?",
+          "How can I use the portal to access academic and financial services?"
+        ],
+        "responses": [
+          "Go to https://student.kibu.ac.ke.",
+          "Enter your registration number as the username.",
+          "Input your password to log in.",
+          "Access services such as course registration, fee payment, and results.",
+          "Use the dashboard to navigate to specific features."
+        ]
+    },
+    {
+      "tag": "forgot_password",
+      "patterns": [
+          "I've forgotten my password for the student portal—how can I reset it?",
+          "What should I do if I can't remember my portal login password?",
+          "Is there a way to recover my student portal password?",
+          "How can I reset my student portal account credentials?"
+        ],
+        "responses": [
+          "Visit https://student.kibu.ac.ke.",
+          "Click on the 'Forgot Password' link on the login page.",
+          "Enter your registered email or student number.",
+          "Check your email for the reset link or instructions.",
+          "Follow the link to create a new password and log in again."
+        ]
+    },
+    {
+      "tag": "result_checking",
+      "patterns": [
+          "Where on the portal can I check my academic results and download my transcript?",
+          "How can I view my grades and transcript on the student portal?",
+          "Is it possible to download academic results from the portal?",
+          "Which section of the portal contains examination records?"
+        ],
+        "responses": [
+          "Log into the student portal with your credentials.",
+          "Go to the 'Academic Records' or 'Examination Results' tab.",
+          "Select the academic year or semester you wish to view.",
+          "Click on 'Download Transcript' if the option is available.",
+          "Save or print the transcript for your records."
+        ]
+    },
+    {
+      "tag": "unit_registration",
+      "patterns": [
+          "What responses should I follow to register for my course units through the portal?",
+          "How do I select and submit my courses online?",
+          "Where can I register for units for the current semester?",
+          "How do I use the portal to choose my class units?"
+        ],
+        "responses": [
+          "Log into the student portal.",
+          "Navigate to the 'Course Registration' section.",
+          "Select the current semester.",
+          "Choose the course units from your program list.",
+          "Submit the registration for approval by your department."
+        ]
+    },
+    {
+      "tag": "fee",
+      "patterns": [
+          "How do I use the portal to pay my school fees and print the receipt?",
+          "Is fee payment possible through the portal?",
+          "Can I generate a payment receipt from the portal?",
+          "What responses are needed to pay tuition via the student system?"
+        ],
+        "responses": [
+          "Log into the portal at https://student.kibu.ac.ke.",
+          "Go to the 'Finance' or 'Fee Payment' section.",
+          "Choose your preferred payment option (e.g., bank or MPESA).",
+          "Enter the payment details and confirm.",
+          "Download or print the generated receipt for your records."
+        ]
+    },
+    {
+      "tag": "personal_detail",
+      "patterns": [
+          "Where can I update my personal details such as phone number or email on the student portal?",
+          "How do I change my contact details through the portal?",
+          "Can I edit my personal information on the university system?",
+          "Which section allows updating email and phone number?"
+        ],
+        "responses": [
+          "Login to the student portal.",
+          "Click on the 'Profile' or 'Personal Info' section.",
+          "Select 'Edit' or 'Update Details'.",
+          "Change the required fields such as phone or email.",
+          "Save the changes and confirm if prompted."
+        ]
+    },
+    {
+      "tag": "transcript",
+      "patterns": [
+          "Is it possible to request and download my academic transcript directly from the student portal?",
+          "Can I apply for my transcript online?",
+          "How do I make a transcript request digitally?",
+          "What is the process for transcript access through the portal?"
+        ],
+        "responses": [
+          "Login to the student portal.",
+          "Navigate to the 'Academic Records' or 'Transcript Request' tab.",
+          "Ensure all dues and clearances are completed.",
+          "Submit a transcript request form if required.",
+          "Download it once it's approved and available."
+        ]
+    },
+    {
+      "tag": "course_transfer",
+      "patterns": [
+          "How do I apply for a course transfer or change of program via the portal?",
+          "Is there an option to request a course change online?",
+          "What are the responses to switch programs on the student portal?",
+          "Can I request a transfer to another course through the system?"
+        ],
+        "responses": [
+          "Log in to the student portal.",
+          "Go to 'Program Management' or 'Change of Course'.",
+          "Select the reason and new program of interest.",
+          "Attach necessary documents if required.",
+          "Submit your request for departmental and administrative approval."
+        ]
+    },
+    {
+      "tag": "check_fee",
+      "patterns": [
+          "How do I check my fee balance and payment history online?",
+          "Can I track my payments through the student portal?",
+          "Where is the fee balance information displayed on the system?",
+          "How do I know how much I still owe the university?"
+        ],
+        "responses": [
+          "Login to the student portal.",
+          "Click on the 'Finance' tab.",
+          "View your fee balance and total payments.",
+          "Download or print the payment statement if needed.",
+          "Contact finance support for any discrepancies."
+        ]
+    },
+    {
+      "tag": "elearning_resources",
+      "patterns": [
+          "Are there e-learning resources or lecture notes that I can access through the student portal?",
+          "Where can I find uploaded course materials online?",
+          "How do I access class notes via the portal?",
+          "Is the e-learning platform linked with the student portal?"
+        ],
+        "responses": [
+          "Log into the student portal.",
+          "Go to the 'E-Learning' or 'Learning Resources' section.",
+          "Select the course or unit you are enrolled in.",
+          "Download or view the available materials.",
+          "Use the platform to interact with posted assignments or discussions."
+        ]
+      
+    },
+    
+    {
+      "tag": "fees_finance",
+    
+      "patterns": [
+          "What is the fee structure for undergraduate students, and where can I download it?",
+          "How can I access the undergraduate fee structure?",
+          "Where can I get the updated fee breakdown for undergraduate programs?",
+          "Is the undergraduate fee structure available for download online?"
+        ],
+        "responses": [
+          "Visit the Kibabii University website.",
+          "Navigate to the 'Admissions' or 'Downloads' section.",
+          "Locate the undergraduate fee structure document.",
+          "Click on the document link to open it.",
+          "Download or print it for reference."
+        ]
+    },
+    {
+      "tag": "fee_payment_dates",
+      "patterns": [
+          "Can I pay my tuition fees in installments, and are there deadlines for each payment?",
+          "Is fee installment allowed, and when are the due dates?",
+          "Does the university accept partial payments for tuition?",
+          "What are the installment plans and deadlines for paying tuition fees?"
+        ],
+        "responses": [
+          "Check the academic calendar for fee payment schedules.",
+          "Confirm installment allowance from the finance office or website.",
+          "Note the specific deadlines for each installment.",
+          "Pay the required portion through the accepted payment channels.",
+          "Keep your payment receipt for confirmation."
+        ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+          "Where can I find the fee structure for diploma, degree, and postgraduate programs?",
+          "Is there a page listing all program fee structures?",
+          "Can I download the fee structures for all academic levels?",
+          "How do I view the fee structures for diploma, undergraduate, and postgraduate courses?"
+        ],
+        "responses": [
+          "Go to the Kibabii University official website.",
+          "Click on 'Finance' or 'Downloads' from the menu.",
+          "Look for a section labeled 'Fee Structures'.",
+          "Select the appropriate academic level (diploma, degree, or postgraduate).",
+          "Download or view the required document."
+        ]
+    },
+    {
+      "tag": "fee_payment",
+      "patterns": [
+          "What bank account or paybill number should I use when paying my school fees?",
+          "Where do I get the official bank or MPESA details for fee payment?",
+          "Which paybill number should I use for tuition payment?",
+          "Can you provide the bank account or paybill info for fees?"
+        ],
+        "responses": [
+          "Refer to your admission letter for fee payment instructions.",
+          "Visit the university's finance page for updated details.",
+          "Locate the bank account or MPESA paybill number.",
+          "Ensure the account name matches 'Kibabii University'.",
+          "Use the reference number (e.g., student ID) when making the payment."
+        ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+          "Are there scholarship opportunities available, and how can I apply for one?",
+          "Does Kibabii University offer scholarships?",
+          "How do I qualify for a scholarship at Kibabii University?",
+          "Where can I apply for scholarships as a student?"
+        ],
+        "responses": [
+          "Visit the 'Scholarships & Bursaries' section on the university website.",
+          "Review the eligibility criteria for each scholarship.",
+          "Download and fill the application form if required.",
+          "Attach necessary supporting documents.",
+          "Submit the application to the relevant university office."
+        ]
+    },
+    {
+      "tag": "helb",
+      "patterns": [
+          "How do I apply for HELB student loans while studying at Kibabii University?",
+          "What is the HELB loan application process for students?",
+          "Can I apply for HELB loans as a new student at Kibabii?",
+          "What responses do I follow to apply for HELB?"
+        ],
+        "responses": [
+          "Go to https://www.helb.co.ke and create an account.",
+          "Log in and start a new loan application for university students.",
+          "Fill in all required personal, academic, and financial details.",
+          "Upload or attach necessary documents such as admission letters and ID.",
+          "Submit the completed form and print the acknowledgment receipt."
+        ]
+    },
+    {
+      "tag": "fee_refund",
+      "patterns": [
+          "Can I get a refund if I overpay or withdraw from the university?",
+          "Is it possible to request a fee refund for overpayment or withdrawal?",
+          "How do I claim a refund if I paid extra or left school?",
+          "What is the refund process at Kibabii University?"
+        ],
+        "responses": [
+          "Visit the university finance office or website for refund forms.",
+          "Fill the refund request form with accurate payment details.",
+          "Attach proof of payment and withdrawal documentation if applicable.",
+          "Submit the form to the finance office for verification.",
+          "Wait for the approval and refund processing notification."
+        ]
+    },
+    {
+      "tag": "print_fee_statement",
+      "patterns": [
+          "Where can I download or print a copy of my fee statement?",
+          "How do I access my tuition fee statement?",
+          "Can I view and print my fee records online?",
+          "Is my financial statement available on the student portal?"
+        ],
+        "responses": [
+          "Login to the Kibabii University student portal.",
+          "Go to the 'Finance' or 'Fee Statement' section.",
+          "Select the academic year or semester of interest.",
+          "Click on 'Download' or 'Print Statement'.",
+          "Save or print the PDF for your records."
+        ]
+    },
+    {
+      "tag": "late_fee_payment",
+      "patterns": [
+          "Are there any penalties or fines for late payment of fees?",
+          "What happens if I pay my fees late?",
+          "Does Kibabii University charge late payment penalties?",
+          "Is there a fine for not meeting the tuition deadline?"
+        ],
+        "responses": [
+          "Review the academic calendar or finance policy documents.",
+          "Check the penalty terms communicated via portal or notice board.",
+          "Ensure you know the exact deadline dates.",
+          "Calculate any penalty based on the overdue period.",
+          "Pay both tuition and penalty to regularize your status."
+        ]
+    },
+    {
+      "tag": "job",
+      "patterns": [
+          "Does the university offer any work-study programs to help students earn while studying?",
+          "Can I get a part-time job through the university?",
+          "Are there any paid student support roles at Kibabii?",
+          "How can I benefit from work-study opportunities?"
+        ],
+        "responses": [
+          "Visit the Dean of Students' office or check campus notices.",
+          "Inquire about available work-study or student assistant roles.",
+          "Meet the eligibility requirements (e.g., academic performance).",
+          "Submit an application or expression of interest.",
+          "If selected, perform assigned duties and earn income as per terms."
+        ]
+    },
+  
+    {
+      "tag": "on_campus_accommodation",
+      "patterns": [
+          "Is on-campus accommodation provided for students at Kibabii University?",
+          "How can I book a room in the university hostel?",
+          "Where do I apply for university housing?",
+          "Are university hostels open to all students or just first-years?"
+        ],
+        "responses": [
+          "Log in to the Kibabii University student portal.",
+          "Navigate to the accommodation section and check for room availability.",
+          "Submit an online request or application for hostel accommodation.",
+          "Wait for confirmation and room allocation from the administration.",
+          "Report to the hostel with your allocation slip during check-in."
+        ]
+    },
+    {
+      "tag": "hostel_charges_amenities",
+      "patterns": [
+          "What are the hostel fees at Kibabii University?",
+          "How much does a room cost in the university hostel?",
+          "What facilities do hostels offer to students?",
+          "What are the services provided in campus hostels?"
+        ],
+        "responses": [
+          "Visit the Kibabii University website or hostel notice board for the latest fees.",
+          "Note that prices may vary depending on room type (single/shared).",
+          "Amenities typically include beds, tables, electricity, water, and security.",
+          "Some hostels may have extra features like WiFi or common rooms.",
+          "Make payments through the university's official channels to secure your space."
+        ]
+    },
+    {
+      "tag": "private_hostels_nearby",
+      "patterns": [
+          "Are there private hostels near Kibabii University?",
+          "Where can I find off-campus housing options near the university?",
+          "Can students rent private hostels around campus?",
+          "Are there approved private hostels for students?"
+        ],
+        "responses": [
+          "Ask the Dean of Students’ office or visit the student affairs desk for a list of approved hostels.",
+          "Tour nearby private hostels for pricing and amenities.",
+          "Compare safety, distance from campus, and rental conditions.",
+          "Confirm whether the hostel is registered or recommended by the university.",
+          "Sign a rental agreement and pay deposit/rent as agreed with the landlord."
+        ]
+    },
+    {
+      "tag": "student_clubs_societies",
+      "patterns": [
+          "What student clubs are available at Kibabii University?",
+          "How do I join university societies or groups?",
+          "Are there any active student organizations I can be part of?",
+          "Can I create a new club or group as a student?"
+        ],
+        "responses": [
+          "Visit the Dean of Students' office or notice board for a list of recognized clubs.",
+          "Attend club orientation events or exhibitions at the start of the semester.",
+          "Contact the club chairperson or secretary to express interest.",
+          "Fill in a membership form and attend scheduled meetings.",
+          "For starting a new club, submit a proposal and constitution to the Dean of Students."
+        ]
+    },
+    {
+      "tag": "cafeteria_meals",
+      "patterns": [
+          "Does Kibabii University have a cafeteria for students?",
+          "Where do students buy food on campus?",
+          "What are the prices of meals at the university cafeterias?",
+          "Is the cafeteria food affordable for students?"
+        ],
+        "responses": [
+          "Visit the nearest student cafeteria on campus for meal options.",
+          "Meals are subsidized and affordable, ranging between Ksh 30–100 depending on the dish.",
+          "Review the posted daily menu to choose your meal.",
+          "Use cash or student meal cards (if available) for transactions.",
+          "Sit in the dining area or carry your meal in a takeaway container."
+        ]
+    },
+    {
+      "tag": "student_union_and_leadership",
+      "patterns": [
+          "How do I join the student union at Kibabii University?",
+          "What are the requirements to run for student leadership?",
+          "Where do I register as a student union member?",
+          "Can I participate in student government elections?"
+        ],
+        "responses": [
+          "Check eligibility criteria for union membership (e.g., good academic standing).",
+          "Collect and fill in the registration or nomination form from the Dean of Students' office.",
+          "Submit your form before the deadline announced in the election timeline.",
+          "Attend vetting and campaign sessions as guided by the Electoral Commission.",
+          "Participate in leadership training and union activities upon election or selection."
+        ]
+    },
+    {
+      "tag": "dress_code_policy",
+      "patterns": [
+          "Is there a student dress code at Kibabii University?",
+          "Does the university have any rules about grooming?",
+          "What is the dress etiquette expected on campus?",
+          "Are there restrictions on how students should dress?"
+        ],
+        "responses": [
+          "Kibabii University promotes modest dressing especially in official areas.",
+          "Avoid clothing with offensive messages or excessively revealing outfits.",
+          "Wear professional attire during presentations, official events, or class assessments.",
+          "Religious attire is allowed and respected.",
+          "There’s no strict uniform, but students are encouraged to uphold decency and discipline."
+        ]
+    },
+    {
+      "tag": "sports_and_recreation",
+      "patterns": [
+          "What sports are offered at Kibabii University?",
+          "Are there any student recreational activities on campus?",
+          "How do I join a sports team at the university?",
+          "What facilities are available for sports and fitness?"
+        ],
+        "responses": [
+          "Visit the Sports Department or Student Affairs office to inquire about teams.",
+          "Choose a sport such as football, volleyball, basketball, or athletics.",
+          "Attend team trials and regular practice sessions.",
+          "Use available facilities such as sports fields and gym equipment.",
+          "Participate in inter-university and intramural competitions."
+        ]
+    },
+    {
+      "tag": "guest_policy_in_hostels",
+      "patterns": [
+          "Can I have visitors in the university hostel?",
+          "Are overnight guests allowed in student hostels?",
+          "What is the visitor policy in Kibabii University hostels?",
+          "Do I need permission to host someone in my room?"
+        ],
+        "responses": [
+          "Guests are allowed during daytime visiting hours only.",
+          "Overnight visitors are strictly prohibited for security and space reasons.",
+          "Obtain permission from the hostel warden for any special circumstances.",
+          "Ensure guests sign in at the security desk during their visit.",
+          "Avoid sharing your room with unauthorized persons to prevent disciplinary action."
+        ]
+    },
+    {
+      "tag": "spiritual_groups_on_campus",
+      "patterns": [
+          "Are there religious groups for students at Kibabii University?",
+          "Can I join a church fellowship or prayer group on campus?",
+          "Does the university have Muslim or Christian student organizations?",
+          "How do I connect with spiritual groups while studying?"
+        ],
+        "responses": [
+          "Check the notice boards or contact the Chaplaincy or Dean of Students' office.",
+          "Choose a group that aligns with your beliefs (e.g., Christian Union, Catholic Students Association, MSA).",
+          "Attend meetings and weekly fellowship sessions.",
+          "Participate in outreach, mentorship, or community service events.",
+          "Respect interfaith diversity and collaborate with others in campus-wide spiritual events."
+        ]
+    },
+  
+    {
+    
+      "tag": "apply_for_graduation",
+      "patterns": [
+          "How do I apply for graduation after finishing my program?",
+          "What is the process for registering for graduation at Kibabii University?",
+          "How can I confirm that I’m eligible to graduate and submit the application?",
+          "What should I do after completing my studies to graduate officially?"
+        ],
+        "responses": [
+          "Log in to the Kibabii University Student Portal.",
+          "Check for the official graduation notice under the announcements or downloads section.",
+          "Clear all academic requirements including course units and grades.",
+          "Clear any outstanding fees and complete the financial clearance process.",
+          "Submit your graduation application via the Student Portal or as directed by the registrar. Refer to: https://kibu.ac.ke/clearance-for-the-9th-graduation/"
+        ]
+    },
+    {
+      "tag": "graduation_list_access",
+      "patterns": [
+          "Where can I check the final graduation list for this year?",
+          "How do I know if my name is on the graduation list?",
+          "Where is the list of students graduating this academic year?",
+          "How do I find the names of students approved for graduation?"
+        ],
+        "responses": [
+          "Visit the official Kibabii University website at https://kibu.ac.ke.",
+          "Navigate to the 'Graduation' or 'Announcements' section.",
+          "Look for the latest graduation list PDF (e.g., 'Final 9th Graduation List').",
+          "Download the document and search for your name using CTRL+F or mobile search.",
+          "Confirm your details, including correct spelling and registration number. Link: https://kibu.ac.ke/wp-content/uploads/2024/10/Final-9th-Graduation-List-30.10.2024.pdf"
+        ]
+    },
+    {
+      "tag": "gown_collection",
+      "patterns": [
+          "How do I get a graduation gown from Kibabii University?",
+          "What are the dates and procedures for gown rental?",
+          "Where do I collect my gown for graduation day?",
+          "How can I find information about graduation gown collection?"
+        ],
+        "responses": [
+          "Visit the Kibabii University website and locate the gown collection notice.",
+          "Read the instructions for collection dates, location, and required documents.",
+          "Ensure you’ve completed graduation clearance to be eligible for gown issuance.",
+          "Go to the designated collection point with your ID and clearance form.",
+          "Return the gown as scheduled after the ceremony to avoid penalties. Info: https://kibu.ac.ke/collection-of-graduation-gowns/"
+        ]
+    },
+    {
+      "tag": "digital_certificate",
+      "patterns": [
+          "Can I get my degree certificate online?",
+          "Is there a digital version of my graduation certificate?",
+          "Where can I request an electronic copy of my degree?",
+          "Does Kibabii University issue e-certificates for graduates?"
+        ],
+        "responses": [
+          "Contact the Registrar (Academic Affairs) via email or in person.",
+          "Ask about the availability of digital certificates for your graduation year.",
+          "If available, follow the application or request process provided by the office.",
+          "Provide any necessary documents such as ID, graduation number, or clearance form.",
+          "Receive the e-certificate via email or download link once approved."
+        ]
+    },
+    {
+      "tag": "alumni_registration",
+      "patterns": [
+          "How do I join the Kibabii University alumni association?",
+          "Where can I register as an alumnus of Kibabii University?",
+          "Is there an online portal to connect with the alumni network?",
+          "How can I stay involved with the university after graduation?"
+        ],
+        "responses": [
+          "Go to the alumni portal: https://alumni.kibu.ac.ke/",
+          "Click on 'Register' or 'Join Now' and fill in your graduation details.",
+          "Create an account with a valid email and password.",
+          "Submit your form and wait for confirmation from the alumni office.",
+          "Participate in events, newsletters, and mentorship programs as an active member."
+        ]
+    },
+  
+    {
+    
+      "tag": "access_e_resources",
+      "patterns": [
+          "Where can I find e-books and journals from the university library?",
+          "How do I log into the library's digital resources platform?",
+          "What’s the link for accessing electronic academic materials from the university?",
+          "How can students access online resources like books and journals?"
+        ],
+        "responses": [
+          "Visit the Kibabii University Library e-resources portal: https://library.kibu.ac.ke.",
+          "Click on the e-resources or 'Digital Library' link.",
+          "Log in using your university-provided student credentials.",
+          "Use the search feature or browse by category (e.g., e-books, journals).",
+          "Download or read the resources online based on access permissions."
+        ]
+    },
+    {
+      "tag": "library_opening_hours",
+      "patterns": [
+          "What time does the library open and close during the week?",
+          "When is the university library accessible to students?",
+          "What are the official operating hours for the Kibabii University Library?",
+          "When can I visit the library for study or borrowing books?"
+        ],
+        "responses": [
+          "The library typically opens at 8:00 AM and closes at 8:00 PM on weekdays.",
+          "On Saturdays, it operates from 9:00 AM to 1:00 PM.",
+          "The library remains closed on Sundays and public holidays unless otherwise announced.",
+          "Always check the library noticeboard or website for temporary changes.",
+          "During exam periods, extended hours may apply."
+        ]
+    },
+    {
+      "tag": "book_borrowing_online",
+      "patterns": [
+          "Can I reserve library books online at Kibabii University?",
+          "How do I renew a borrowed book using the library system?",
+          "Is there a way to request books from the library through the internet?",
+          "Can I access my borrowing history and renewals online?"
+        ],
+        "responses": [
+          "Visit the library portal at https://library.kibu.ac.ke.",
+          "2. Navigate to the Online Public Access Catalog (OPAC) section.",
+          "3. Log in with your student ID and password to access your library account.",
+          "4. Use the portal to search for books, reserve them, or renew current loans.",
+          "5. Confirmation of your actions will be displayed and/or sent to your email."
+        ]
+    },
+    {
+      "tag": "ict_support_contact",
+      "patterns": [
+          "Who should I contact if the university internet isn’t working?",
+          "What’s the email address for ICT help at Kibabii University?",
+          "Is there a helpdesk for internet or computer issues on campus?",
+          "How can I report an ICT-related problem at Kibabii University?"
+        ],
+        "responses": [
+          "For ICT issues, send an email to ictsupport@kibu.ac.ke detailing your problem.",
+          "You can also visit the ICT department's helpdesk located within the main campus.",
+          "If the issue is urgent, consider calling the ICT support line if available.",
+          "Provide your student ID, device type, and a clear description of the problem.",
+          "Follow up if no response is received within 24–48 working hours."
+        ]
+    },
+    {
+      "tag": "wifi_connection",
+      "patterns": [
+          "How do I log into the university WiFi as a student?",
+          "Which network should I use to access WiFi at Kibabii University?",
+          "What credentials are required to use the campus internet?",
+          "Is there a guide to connect to the university wireless network?"
+        ],
+        "responses": [
+          "On your device, go to WiFi settings and select the network named 'KIBU-STUDENTS'.",
+          "Enter your university email credentials (e.g., studentnumber@kibu.ac.ke).",
+          "Accept the security certificate if prompted.",
+          "If the connection fails, forget the network and try reconnecting.",
+          "For persistent issues, contact ictsupport@kibu.ac.ke or visit the ICT helpdesk."
+        ]
+    },
+  
+    {
+      "tag": "location_directions",
+      
+      "patterns": [
+          "How do I reach Kibabii University from Bungoma town?",
+          "Can you tell me the exact location of Kibabii University?",
+          "Where is Kibabii University situated in Kenya?",
+          "What’s the address of Kibabii University and how can I get there?"
+        ],
+        "responses": [
+          "Kibabii University is located in Bungoma County, Kenya.",
+          "It is approximately 8 km from Bungoma Town along the Bungoma-Chwele road.",
+          "Use Google Maps and search for 'Kibabii University' to get real-time directions.",
+          "If using public transport, board a matatu or boda boda heading to Kibabii from Bungoma town.",
+          "You can also call the university’s front desk at +254 704 244 342 for assistance with directions."
+        ]
+    },
+    
+    {
+      "tag": "contact_information",
+      
+      "patterns": [
+            "What is the contact information for Kibabii University's main office?",
+            "How do I reach specific departments at Kibabii University?",
+            "Can you provide the phone number and email for Kibabii University?",
+            "Where can I find contact details for various departments at Kibabii University?"
+          ],
+          "responses": [
+            "Visit the official Kibabii University website at https://kibu.ac.ke.",
+            "Navigate to the 'Contact Us' section, usually found at the bottom of the homepage.",
+            "For general inquiries, use the provided phone number: +254 704 244 342 or email: info@kibu.ac.ke.",
+            "To contact specific departments, look for a directory or departmental contacts section on the website.",
+            "If the information isn't available online, consider calling the main office to request specific departmental contact details."
+          ]
+    },
+    {
+      "tag": "vice_chancellor_info",
+      
+      "patterns": [
+            "Who holds the position of Vice-Chancellor at Kibabii University?",
+            "Can you tell me who the current Vice-Chancellor is at Kibabii University?",
+            "Who's leading Kibabii University as the Vice-Chancellor?",
+            "Who is the present Vice-Chancellor of Kibabii University?"
+          ],
+          "responses": [
+            "1. As of the latest update, the Vice-Chancellor of Kibabii University is Prof. Isaac Ipara Odeo.",
+            "2. He oversees the academic and administrative functions of the university.",
+            "3. For official communications or messages from the Vice-Chancellor, check the university's website under the 'Administration' or 'Leadership' section.",
+            "4. Any changes in leadership will be officially announced on the university's official channels.",
+            "5. For direct inquiries, you can contact the university's main office."
+          ]
+    },
+    {
+      "tag": "vision_mission_values",
+      
+      "patterns": [
+            "Can you share Kibabii University's vision and mission statements?",
+            "What are the core values upheld by Kibabii University?",
+            "Where can I find the mission and vision of Kibabii University?",
+            "What principles guide Kibabii University's operations?"
+          ],
+          "responses": [
+            "1. Kibabii University's vision is 'To be a global and dynamic University of excellence in Science, Technology and Innovation'.",
+            "2. Its mission is 'To achieve excellence in generation, transmission and enhancement of new knowledge in Science, Technology and Innovation through quality teaching, research, training, scholarship, consultancy and outreach programmes'.",
+            "3. The core values include Integrity, Excellence, Accountability, Equity, and Social Responsibility.",
+            "4. These statements are typically found on the university's official website under the 'About Us' or 'Our Profile' section.",
+            "5. They serve as guiding principles for the university's strategic planning and daily operations."
+          ]
+    },
+    {
+      "tag": "university_history",
+      
+      "patterns": [
+            "What is the historical background of Kibabii University?",
+            "When did Kibabii University come into existence?",
+            "Can you provide a brief history of Kibabii University?",
+            "How has Kibabii University evolved since its inception?"
+          ],
+          "responses": [
+            "1. Kibabii University was established as a university college in 2011.",
+            "2. It was granted a charter and became a fully-fledged university in 2015.",
+            "3. The university has since expanded its academic programs and infrastructure.",
+            "4. Detailed historical information can be found on the university's website under the 'About Us' or 'History' section.",
+            "5. The university's growth reflects its commitment to providing quality higher education in Kenya."
+          ]
+    },
+    {
+      "tag": "institution_type",
+      
+      "patterns": [
+            "What type of institution is Kibabii University?",
+            "Is Kibabii University government-funded or privately owned?",
+            "Does Kibabii University operate as a public university?",
+            "Is Kibabii University a private institution?"
+          ],
+          "responses": [
+            "1. Kibabii University is a public institution.",
+            "2. It is chartered by the Government of Kenya.",
+            "3. The university receives funding from the government to support its operations.",
+            "4. As a public university, it adheres to regulations set by the Ministry of Education.",
+            "5. Information about its status can be verified on the university's official website or through government education portals."
+          ]
+    },
+    {
+      "tag": "university_motto",
+      
+      "patterns": [
+            "Can you tell me Kibabii University's motto?",
+            "What does Kibabii University's motto signify?",
+            "What is the guiding slogan of Kibabii University?",
+            "What phrase encapsulates Kibabii University's mission?"
+          ],
+          "responses": [
+            "1. The motto of Kibabii University is 'Knowledge for Development'.",
+            "2. This motto emphasizes the role of education in societal and economic advancement.",
+            "3. It reflects the university's commitment to producing graduates who contribute to development.",
+            "4. The motto is often displayed on official documents and the university's emblem.",
+            "5. It serves as an inspiration for students and staff to pursue knowledge that fosters growth."
+          ]
+    },
+    {
+      "tag": "news_updates",
+      
+      "patterns": [
+            "How can I stay informed about Kibabii University's recent developments?",
+            "Where are Kibabii University's news and announcements posted?",
+            "Is there a portal for Kibabii University's latest updates?",
+            "How do I access Kibabii University's recent news and events?"
+          ],
+          "responses": [
+            "1. Visit the official Kibabii University website at https://kibu.ac.ke.",
+            "2. Navigate to the 'News' or 'Announcements' section on the homepage.",
+            "3. Browse through the listed articles for recent updates and events.",
+            "4. For timely notifications, consider subscribing to the university's newsletter if available.",
+            "5. Follow the university's official social media pages for real-time updates."
+          ]
+        },
+    {
+      "tag": "upcoming_events",
+      
+      "patterns": [
+            "What events are scheduled soon at Kibabii University?",
+            "Are there any forthcoming academic activities at Kibabii University?",
+            "How can I find out about Kibabii University's upcoming events?",
+            "What is the schedule for future events at Kibabii University?"
+          ],
+          "responses": [
+            "1. Check the 'Events' or 'Calendar' section on the Kibabii University website.",
+            "2. Review the listed events and note their dates and details.",
+            "3. For academic activities, consult the academic calendar available on the website.",
+            "4. Attend departmental meetings or forums where upcoming events are discussed.",
+            "5. Follow the university's official social media channels for announcements on events."
+          ]
+    },
+    {
+      "tag": "social_media_links",
+      
+      "patterns": [
+            "What are Kibabii University's official social media handles?",
+            "How can I connect with Kibabii University on social media?",
+            "Where can I find Kibabii University's social media pages?",
+            "Is Kibabii University active on platforms like Facebook and Twitter?"
+          ],
+          "responses": [
+            "1. Kibabii University maintains official pages on several social media platforms.",
+            "2. On Facebook, search for 'Kibabii University' to find their official page.",
+            "3. On Twitter, follow their handle '@KibabiiUni' for updates.",
+            "4. They may also have a presence on platforms like YouTube and LinkedIn.",
+            "5. Links to these official pages are typically available on the university's website footer or 'Contact Us' section."
+          ]
+        }
+
   ]
 }

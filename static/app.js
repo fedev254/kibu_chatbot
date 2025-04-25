@@ -41,7 +41,7 @@ class Chatbox {
         if (userText === '') return;
 
         const userMessage = { name: 'User', message: userText };
-        this.messages.push(userMessage);
+        this.messages.push(userMessage); // Add user's message first
 
         fetch('/predict', {
             method: 'POST',
@@ -51,33 +51,44 @@ class Chatbox {
                 'Content-Type': 'application/json'
             }
         })
-            .then(response => response.json())
-            .then(data => {
-                const botMessage = { name: 'Abel', message: data.answer };
-                this.messages.push(botMessage);
-                this.updateChatText(chatBox);
-                inputField.value = '';
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                this.updateChatText(chatBox);
-                inputField.value = '';
+        .then(response => response.json())
+        .then(data => {
+            // Ensure that the response is handled properly (handling multiple bot responses)
+            let botResponses = [];
+            if (Array.isArray(data.answer)) {
+                botResponses = data.answer;
+            } else if (typeof data.answer === 'string' && data.answer.includes('\n')) {
+                botResponses = data.answer.split('\n').map(s => s.trim()).filter(Boolean);
+            } else {
+                botResponses = [data.answer];
+            }
+
+            // Append each bot response after the user message
+            botResponses.forEach(res => {
+                const botMessage = { name: 'Abel', message: res };
+                this.messages.push(botMessage); // Ensure bot message comes after user message
             });
+
+            // Update the chat display
+            this.updateChatText(chatBox);
+            inputField.value = ''; // Clear the input field
+        });
     }
 
     updateChatText(chatBox) {
         const chatMessageContainer = chatBox.querySelector('.chatbox__messages');
-        chatMessageContainer.innerHTML = this.messages
-            .slice()
-            .reverse()
-            .map(item => {
-                if (item.name === 'Abel') {
-                    return `<div class="messages__item messages__item--visitor">${item.message}</div>`;
-                } else {
-                    return `<div class="messages__item messages__item--operator">${item.message}</div>`;
-                }
-            })
-            .join('');
+
+        // Create new message elements and append to the container
+        this.messages.forEach(item => {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('messages__item');
+            messageElement.classList.add(item.name === 'Abel' ? 'messages__item--visitor' : 'messages__item--operator');
+            messageElement.innerHTML = item.message;
+            chatMessageContainer.appendChild(messageElement);
+        });
+
+        // Scroll to the bottom after adding new messages
+        chatMessageContainer.scrollTop = chatMessageContainer.scrollHeight;
     }
 }
 
